@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmmGameRankingObserver", "DmmGameRankingObserver\DmmGameRankingObserver.csproj", "{375DC03D-2660-4C88-BF54-B6BE943D504F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmmGameRankingObserver.Test", "DmmGameRankingObserver.Test\DmmGameRankingObserver.Test.csproj", "{F7495917-047F-4E1C-AAE6-A879697C8FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DmmGameRankingObserver.Core", "DmmGameRankingObserver.Core\DmmGameRankingObserver.Core.csproj", "{7D0471EB-3EEC-4103-9A71-7FCAB08B67BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{375DC03D-2660-4C88-BF54-B6BE943D504F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{375DC03D-2660-4C88-BF54-B6BE943D504F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{375DC03D-2660-4C88-BF54-B6BE943D504F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7495917-047F-4E1C-AAE6-A879697C8FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7495917-047F-4E1C-AAE6-A879697C8FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7495917-047F-4E1C-AAE6-A879697C8FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7495917-047F-4E1C-AAE6-A879697C8FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D0471EB-3EEC-4103-9A71-7FCAB08B67BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0471EB-3EEC-4103-9A71-7FCAB08B67BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0471EB-3EEC-4103-9A71-7FCAB08B67BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0471EB-3EEC-4103-9A71-7FCAB08B67BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
