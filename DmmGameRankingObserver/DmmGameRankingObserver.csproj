@@ -3,7 +3,8 @@
     <TargetFramework>net461</TargetFramework>
   </PropertyGroup>
   <ItemGroup>    
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.5" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.5" />    
+    <PackageReference Include="Microsoft.WindowsAzure.ConfigurationManager" Version="3.2.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DmmGameRankingObserver.Core\DmmGameRankingObserver.Core.csproj" />
