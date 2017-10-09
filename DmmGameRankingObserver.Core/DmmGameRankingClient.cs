@@ -11,14 +11,6 @@ using AngleSharp.Parser.Html;
 
 namespace DmmGameRankingObserver.Core
 {
-    public class GameRankingElement
-    {
-        public string Name;
-        public int Rank;
-        public string Comment;
-        public string Genre;
-    }
-
     public class DmmGameRankingClient
     {
         static readonly string RankingPageUrl = @"http://games.dmm.co.jp/ranking/";
@@ -43,7 +35,7 @@ namespace DmmGameRankingObserver.Core
             File.WriteAllText(output, html);
         }
 
-        public IList<GameRankingElement> Parse()
+        public IList<GameRanking> Parse()
         {
             var listNode = document.QuerySelectorAll("div")
                             .Where(x => x.ClassList.Contains("d-item"))
@@ -54,7 +46,7 @@ namespace DmmGameRankingObserver.Core
             var ul = listNode.QuerySelectorAll("ul").First();
             var liElements = ul.Children.Where(x => x.NodeName.ToLower() == "li").ToArray();
 
-            var results = new List<GameRankingElement>();
+            var results = new List<GameRanking>();
             foreach (var liNode in liElements)
             {
                 var name = liNode.QuerySelectorAll("span")
@@ -76,7 +68,7 @@ namespace DmmGameRankingObserver.Core
                                 .First()
                                 .TextContent;
 
-                var elem = new GameRankingElement
+                var elem = new GameRanking
                 {
                     Name = name,
                     Rank = rank,
