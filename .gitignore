@@ -259,3 +259,4 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+DmmGameRankingObserver/Properties/PublishProfiles/DmmRankingObserver - Web Deploy\.pubxml
