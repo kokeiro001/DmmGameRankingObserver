@@ -16,8 +16,9 @@ namespace DmmGameRankingObserver
 
         static readonly string TableName = @"DmmGameRanking";
 
+        // 毎時0分に更新されてる可能性があるため、毎時10分に取得するように。
         [FunctionName("ObserveRankingPageTimerTrigger")]
-        public static async Task Run([TimerTrigger("0 0 */1 * * *")]TimerInfo myTimer, TraceWriter log)
+        public static async Task Run([TimerTrigger("0 10 */1 * * *")]TimerInfo myTimer, TraceWriter log)
         {
             log.Info($"C# Timer trigger function executed at: {DateTime.Now}");
             var nowStr = DateTime.Now.ToString("yyyyMMdd_hhmmss");
