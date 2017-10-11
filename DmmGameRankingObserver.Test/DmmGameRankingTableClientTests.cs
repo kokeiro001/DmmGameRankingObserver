@@ -37,7 +37,7 @@ namespace DmmGameRankingObserver.Core.Tests
             var entity = new DmmGameRankingEntity
             {
                 GameTitle = "ul4",
-                ObservedDateTime = DateTime.Now.ToString("yyyyMMdd_hhmmss"),
+                ObservedDateTime = DateTime.Now.ToString("yyyyMMdd_HHmmss"),
                 Rank = 1,
                 Comment = "コメントだよー",
                 Genre = "「ジャンル」のスペル難しいよー",
@@ -52,7 +52,7 @@ namespace DmmGameRankingObserver.Core.Tests
         {
             var client = new DmmGameRankingTableClient(StorageAccount, TableName);
 
-            var nowStr = DateTime.Now.ToString("yyyyMMdd_hhmmss");
+            var nowStr = DateTime.Now.ToString("yyyyMMdd_HHmmss");
             var entities = new DmmGameRankingEntity[] 
             {
                 new DmmGameRankingEntity

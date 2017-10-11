@@ -32,7 +32,7 @@ namespace DmmGameRankingObserver.Test
             elements.Any().IsTrue();
 
             var tableClient = new DmmGameRankingTableClient(StorageAccount, TableName);
-            var nowStr = DateTime.Now.ToString("yyyyMMdd_hhmmss");
+            var nowStr = DateTime.Now.ToString("yyyyMMdd_HHmmss");
             var entities = elements.Select(x => new DmmGameRankingEntity
             {
                 GameTitle = x.Name,

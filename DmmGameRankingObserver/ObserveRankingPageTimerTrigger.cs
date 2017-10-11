@@ -21,7 +21,7 @@ namespace DmmGameRankingObserver
         public static async Task Run([TimerTrigger("0 10 */1 * * *")]TimerInfo myTimer, TraceWriter log)
         {
             log.Info($"C# Timer trigger function executed at: {DateTime.Now}");
-            var nowStr = DateTime.Now.ToString("yyyyMMdd_hhmmss");
+            var nowStr = DateTime.Now.ToString("yyyyMMdd_HHmmss");
             log.Info($"nowStr: {nowStr}");
 
             var dmmClient = new DmmGameRankingClient();
